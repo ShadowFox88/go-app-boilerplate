@@ -1,11 +1,11 @@
 {
     "name": "Go App Boilerplate",
-    "dockerFile": "Dockerfile",
+    "image": "cyrus01337/neovim",
+    "runArgs": [
+        "--privileged"
+    ],
     "workspaceFolder": "/workspace",
-    "remoteUser": "go",
-    "postCreateUser": "go",
     "features": {
-        "ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/devcontainers/features/github-cli:1": {}
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
     }
 }
